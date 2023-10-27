@@ -1,0 +1,109 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+ /* Heading 1 elements */
+h1 {
+  text-transform: uppercase; /* Capitalizing all h1 headings */
+  font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+  text-align: center; /* Centering all h1 elements */
+  margin-top: 3%; /* Adds a small margin above h1 elements */
+  color: #1a1a1a; 
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+  filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
+  transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+  transition: transform 1s; /* This causes the transformation to last 1 second */
+}
+
+/* Styling for portfolio title text */
+.white-text {
+  color: #fff; /* This is used to change the color of the portfolio title text */
+}
+
+/* Paragraph elements */
+p {
+  font-family: Perpetua, Rockwell Extra Bold;
+  text-align: justify; /* Justify text within paragraph elements */
+  letter-spacing: 1px; /* This expands the text slightly */
+  font-size: 20px;
+  padding-left: 20px; /* Adds padding to the left of the paragraph element */
+  padding-right: 20px; /* Adds padding to the right of the paragraph element */
+}
+
+/* Paragraph element hover effect */
+p:hover {
+  transition: transform 1s; /* This makes the transform effect last 1 second */
+transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+}
+
+  
+  /***** VIDEO STYLING *****/
+/* Formatting for background video */
+#Typing_Video {
+  position: fixed; /* This fixes the video to the page */
+  right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+  bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+  min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+  z-index: -1; /* This places the video behind the other elements on the page */
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+  #Typing_Video {
+      display: none;
+  }
+}
+
+/* Texts over the video */
+.Video_Text {
+  background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+  color: white; /* Makes the font color white */
+  width: 100%; /* Ensures the video-text container fills the width of the video */
+  padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+  position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+  -webkit-animation: moveVideoText 5.75s;
+  animation: moveVideoText 5.75s;
+}
+
+/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+@keyframes moveVideoText {
+  from {top: -100vw;} /* This sets the position of the video text to above the viewport */
+  to {top: 0vw;} /* This moves the video text to the normal positioning on the viewport */
+}
+/***** END OF VIDEO STYLING *****/
+/* Styling for portfolio title text */
+.white-text {
+  color: #fff; /* This is used to change the color of the portfolio title text */
+}
+/* Center class - this applies to all elements with the class "center" */
+.center {
+  text-align: center; /* This center aligns the text */
+}
+
+/* Center class hover effect - This only affects the quote,  link, and footer */
+.center:hover {
+  transition: transform 2s; /* This makes the transform effect last 2 seconds */
+  transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+}
